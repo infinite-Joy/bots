@@ -13,10 +13,6 @@ api = twitter.Api(consumer_key=keys["data"]["consumer_key"],
                   access_token_key=keys["data"]["access_token_key"],
                   access_token_secret=keys["data"]["access_token_secret"])
 
-# users = api.GetFriends()
-
-# print([u.screen_name for u in users])
-
 message = "best code is no code at all"
 
 try:
