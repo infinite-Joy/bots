@@ -33,5 +33,3 @@ if [ "${index}" -gt 20 ]; then
 	python tweet.py "${quote}"
 
 fi
-
-
