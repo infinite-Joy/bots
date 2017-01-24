@@ -1,5 +1,9 @@
 decorator==4.0.10
+<<<<<<< HEAD
 pkg-resources==0.0.0
+=======
+facebook-sdk==2.0.0
+>>>>>>> a7f907226e0c403fd8103d44eaaf58c07d87a3ce
 praw==3.5.0
 requests==2.11.1
 six==1.10.0
