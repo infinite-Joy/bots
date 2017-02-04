@@ -1,8 +1,3 @@
-"""
-A simple example script to get all posts on a user's timeline.
-Originally created by Mitchell Stewart.
-<https://gist.github.com/mylsb/10294040>
-"""
 import facebook
 import requests
 
@@ -15,18 +10,13 @@ def some_action(post):
     print(post['created_time'])
 
 
-# You'll need an access token here to do anything.  You can get a temporary one
-# here: https://developers.facebook.com/tools/explorer/
-access_token = 'EAAOGVlKULiABAKePZCd6iYupPunRrO4KNRYuIVytzJ6cBpxvdSUtjRuVdUEK2412qzMFp71hrJZCDLImOFb9J4Jga9mAiy3g64ZAalwVzjmKtqP152IZBtZB34tf0yABWTvAxVqiGEeS2VppaoFXoHfEioeZBaXxNhZAQlZBW1FllH82muAFGNAK'
+access_token = ""
 # Look at Bill Gates's profile for this example by using his Facebook id.
-userid = '1239389619451477'
+userid = ""
 
 graph = facebook.GraphAPI(access_token)
-#profile = graph.get_object(userid)
 posts = graph.get_connections(userid, 'posts')
 
-# Wrap this block in a while loop so we can keep paginating requests until
-# finished.
 while True:
     try:
         # Perform some action on each post in the collection we receive from
